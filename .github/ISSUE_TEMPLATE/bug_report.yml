@@ -1,0 +1,65 @@
+name: Report a problem
+description: Something in Cordon isn't working right
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! This page is **public**. Please do **not** include passwords, codes, client or company names, email addresses, or screenshots that show client data. Blur or crop them first.
+
+        Found a **security** problem? Don't post it here. Use **Security → Report a vulnerability** on this repo instead (private).
+  - type: input
+    id: version
+    attributes:
+      label: Cordon version
+      description: Settings → About
+      placeholder: "0.1.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Windows version
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Open a client
+        2. Click ...
+        3. See ...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Cordon?
+      options:
+        - Tabs or windows
+        - Signing in to a client portal
+        - MSP tools (Halo, IT Glue, ...)
+        - PIN lock
+        - Updates
+        - Ad blocking or pop-ups
+        - Bookmarks or profile import/export
+        - Installing or starting the app
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Update log (only for update problems)
+      description: Paste the last lines of %APPDATA%\Cordon\logs\updater.log. It contains no passwords.
+      render: text

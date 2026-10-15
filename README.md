@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/d1same/cordon-releases/releases/latest"><b>⬇ Download the latest version</b></a>
+  <a href="https://github.com/d1same/cordon/releases/latest"><b>⬇ Download the latest version</b></a>
 </p>
 
 ---
@@ -27,7 +27,7 @@
 
 ## Install (Windows 10/11)
 
-1. Open the **[latest release](https://github.com/d1same/cordon-releases/releases/latest)** and download **`Cordon Setup x.y.z.exe`**.
+1. Open the **[latest release](https://github.com/d1same/cordon/releases/latest)** and download **`Cordon Setup x.y.z.exe`**.
 2. Run it. Windows may show **"Windows protected your PC"** the first time. Click **More info → Run anyway**. (Cordon isn't signed with a paid Microsoft certificate. Updates are protected by Cordon's own signature, below.)
 3. Pick **Only for me** (recommended) and finish.
 4. On first launch, create your **PIN** (8+ characters, or 6 with a letter). Then import a profile or bookmarks, or start fresh.
@@ -81,8 +81,8 @@ The output must equal the `sha512:` line in that release's `latest.yml`.
 
 ## FAQ
 
-**Is it free?** It's built for our MSP team. Ask your administrator before installing it on a client device.
-
 **Mac?** Not yet; Windows first.
 
-**Something wrong?** Tell your MSP administrator and include the version (Settings → About).
+**Found a bug or have an idea?** [Open an issue](https://github.com/d1same/cordon/issues/new/choose). It takes a minute: pick *Report a problem* or *Suggest an improvement*, and include your Cordon version (Settings → About). Issues are public, so leave out passwords and client names.
+
+**Found a security problem?** Please report it privately: [Report a vulnerability](https://github.com/d1same/cordon/security/advisories/new). See [SECURITY.md](SECURITY.md).

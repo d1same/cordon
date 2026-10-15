@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem (private)
+    url: https://github.com/d1same/cordon/security/advisories/new
+    about: Vulnerabilities go here, never in a public issue.

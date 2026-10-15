@@ -1,0 +1,15 @@
+name: Suggest an improvement
+description: An idea that would make Cordon better
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: This page is **public**. Please don't include client or company names.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: What are you trying to do, and what would make it easier?
+    validations:
+      required: true
